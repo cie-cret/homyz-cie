@@ -1,0 +1,95 @@
+.v-wrapper {
+    padding: 0 7.45rem;
+}
+
+.v-container .image-container {
+    border: 8px solid rgb(232 232 232 / 93%);
+}
+
+/* Why do we require .v-container here? > bc it's the primary class then specify the secondary class*/
+
+.v-container > div {
+    flex: 1; /* make 2 div boxes equal in spacing */
+}
+
+.v-right {
+    gap: 0.5rem;
+}
+
+.accordion{
+    margin-top: 2rem;
+    border: none;
+}
+
+.accordionItem {
+    background: white;
+    border: 0.8px solid rgba(128, 128, 128, 0.1434);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.accordionItem.expanded {
+    box-shadow: var(--shadow);
+    border-radius: 6px;
+}
+
+.accordionButton {
+    background: white;
+    padding: 1rem;
+    width: 100%;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.icon {
+    padding: 10px;
+    background: #eeeeff;
+    border-radius: 5px;
+}
+
+.icon svg {
+    fill: var(--blue);
+}
+
+.accordionButton .primaryText {
+    font-size: 1.1rem;
+}
+
+@media (max-width: 1024px) {
+    .v-wrapper {
+        padding: 0rem;
+    }
+
+    .v-container {
+        flex-direction: column;
+    }
+
+    .v-left .image-container {
+        width: 30rem;
+        height: 35rem;
+    }
+
+    @media (max-width: 648px) {
+
+        .v-left .image-container {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .accordionButton .primaryText {
+            font-size: 0.75rem;
+        }
+    }
+}
+
+/* @media (max-width: 1024px) {
+    .v-wrapper {
+        padding: 0;
+    }
+
+    .v-left .image-container {
+        height: 100%;
+    }
+} */

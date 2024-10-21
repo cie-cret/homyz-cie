@@ -1,0 +1,107 @@
+/* .r-wrapper {
+    padding: 0 7.45rem;
+} */
+
+.r-container {
+    overflow: hidden; /* Make it not over the margin when sliding */
+    position: relative;
+}
+
+.r-head {
+    margin-bottom: 2rem;
+}
+
+.r-card {
+    gap: 0.6rem;
+    padding: 1rem;
+    border-radius: 10px;
+    max-width: max-content;
+    margin: auto; /* Make the slide center if the screen is small */
+    transition: all 200ms ease-in;
+    margin-bottom: 3.5rem;
+}
+
+.r-card > img {
+    width: 100%;
+    max-width: 15rem;
+}
+
+.r-card > :nth-child(2) {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.r-card > :nth-child(3) {
+    font-size: 1.5rem;
+}
+
+.r-card > :nth-child(4) {
+    font-size: 0.7rem;
+    width: 15rem;
+}
+
+.r-card:hover {
+    scale: 1.025;
+    cursor: pointer;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(136, 160, 255, 0.46) 217.91%
+    );
+    box-shadow: 0px 72px 49px -51px rgba(136, 160, 255, 0.21);
+}
+
+.swiper-slide {
+    overflow: visible;
+}
+
+.leftButton {
+    position: absolute;
+    left: 0.5rem;
+}
+
+.rightButton {
+    position: absolute;
+    right: 0.5rem;
+}
+
+.r-button {
+    /* position: absolute;
+    top: 50%; */
+    /* gap: 1rem; */
+    /* right: 0; */
+    top: 20%;
+    z-index: 2;
+}
+
+.r-buttons button {
+    font-size: 1.2rem;
+    padding: 1rem 0.5rem;
+    color: var(--blue);
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.r-button:active {
+    background-color: #EEEEFF;
+}
+
+.r-button {
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
+}
+
+/* .r-buttons > :nth-child(1) {
+    background-color: #EEEEFF;
+}
+
+.r-buttons > :nth-child(2) {
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
+} */
+
+@media (max-width: 1024px) {
+    .r-head {
+        align-items: center;
+    }
+}
